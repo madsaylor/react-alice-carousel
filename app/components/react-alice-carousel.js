@@ -333,9 +333,9 @@ export default class AliceCarousel extends React.PureComponent {
   _renderDotsNavigation() {
     const { slides, items } = this.state
     const dotsLength = Utils.getDotsNavigationLength(slides.length, items)
-
+    const positionClass = this.props.dotsInside? ' inside':''
     return (
-      <ul className="alice-carousel__dots">
+      <ul className={'alice-carousel__dots' + positionClass}>
         {slides.map((item, i) => {
           if (i < dotsLength) {
             const itemIndex = this._getItemIndexForDotNavigation(i, dotsLength)

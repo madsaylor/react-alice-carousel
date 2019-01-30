@@ -151,6 +151,11 @@ $play-btn-size: 32px !default;
   text-align: center;
   list-style: none;
   padding: 0;
+  &.inside{
+    margin-top: 0;
+    position: relative;
+    bottom: 30px;
+  }
   &-item {
     display: inline-block;
     width: 8px;
