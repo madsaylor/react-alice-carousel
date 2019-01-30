@@ -20,7 +20,8 @@
     "precommit": "cross-env npm run lint && npm test",
     "prepush": "cross-env npm run lint && npm test",
     "webpack:dev": "webpack --colors",
-    "build:lib": "webpack --config webpack.lib.config.js --colors"
+    "build:lib": "webpack --config webpack.lib.config.js --colors",
+    "install": "webpack --config webpack.lib.config.js --colors"
   },
   "keywords": [
     "react",
